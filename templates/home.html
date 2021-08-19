@@ -1,0 +1,159 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HNG Resume{% block title %}{% endblock title %}</title>
+    <link href="{% static 'css/mine.css' %}" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	{% block content %}
+	
+		<div class="profile-area" >
+			<div class="contaner">
+				<div class="row">
+					<div class="col-6">
+						<div class="card">
+							<div class="img1">
+								<img src="{% static 'b.jpg' %}"></div>
+							<div class="img2"><img src="{% static 'c.JPG' %}"></div>
+							<div class="main-text">
+								<h1>Ysabel Katchy</h1>
+								<h2>Computer Programmer|Entrepreneur</h2>
+								
+								<br><p>Tools
+								<br><img src="{% static 'd.png' %}"
+								width="60px"
+								height="60px">
+								<img src="{% static 'py.png' %}"
+								width="100px"
+								height="60px">
+								<img src="{% static 'git.jpg' %}"
+								width="100px"
+								height="60px">
+								<img src="{% static 'j.jpg' %}"
+								width="80px"
+								height="60px"><br>
+								<br><a class="btn btn-primary btn-lg" href="#" role="button" class="lead">Hire Me</a>
+								</p>
+								<img src="{% static 'icon.JPG' %}"  
+								width="150px"
+								height="30px" 
+								class="center" 
+								class="img3">
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="card">
+					<br>
+
+						<form action="" method="post">
+							{% csrf_token %}
+							<br>{{ form.as_p }}
+							<input type="submit" class="btn btn-primary btn-lg" value="Submit" />
+						</form>
+					<br><p></p>
+				</div>
+			</div>
+		</div>
+		<center>
+			<blockquote class="blockquote">
+					<img src="{% static 'z.png' %}"
+					width="80px"
+					height="80px">
+
+					<img src="{% static 'hng.JPG' %}"
+					width="80px"
+					height="50px">
+
+					<p class="lead" class="text-center">To check out the HNG platform <a href="https://internship.zuri.team/"> Click here</a></p>
+				</blockquote>
+		</center>
+
+		
+			
+
+	<!-- <div class="row">
+		<div class="col-7">
+			<img src="{% static 'c.JPG' %}"
+			width="mx-auto" 
+			height="500px" 
+			class="rounded-right" >
+
+		</div>
+        <div class="col-5">
+			<h1 class="text-right"><b>Ysabel Katchy</b></p>
+			<p class="lead">....Computer Programmer....</p>
+			<br>
+
+			<p class="lead"><b>Ysabel Katchy</b> uses these softwares:</p>
+			<img src="{% static 'p.png' %}"
+			width="50px"
+			height="50px">
+			<img src="{% static 'd.png' %}"
+			width="50px"
+			height="50px">
+			<img src="{% static 'j.jpg' %}"
+			width="50px"
+			height="50px">
+			<img src="{% static 'g.png' %}"
+			width="50px"
+			height="50px">
+			<br>
+			<br><p class="lead"><b>You can follow Ysabel Katchy at:</b></p>
+			<img src="{% static 'icon.JPG' %}"  
+			width="400px"
+			height="80px" 
+			class="rounded-center mx-auto d-block"
+			class="center" >
+		</h1>
+	</div>
+</div>
+	 
+	<br>
+	<div  class="card">
+		<p class="lead"><br><font color="grey"><b>Request a project from Ysabel</font></b></p>
+
+		<form action="">
+			<label for="user" class="lead"><font color="blue">Username:</font></label> <input class="lead" type="text" name="user" id="mess"><br>
+			<label for="mess" class="lead"><font color="blue">Request:</font></label> <input class="lead" type="text" name="mess" id="mess"><br>
+			<br><a class="btn btn-primary btn-lg" href="{% url 'response'%}" role="button" class="lead">Submit</a>
+		</form>
+		<p><font color="lightblue">.....</font></p>
+	</div>
+	<blockquote class="blockquote">
+			<img src="{% static 'z.png' %}"
+			width="80px"
+			height="80px">
+
+			<img src="{% static 'hng.JPG' %}"
+			width="80px"
+			height="50px">
+
+			<p class="lead">To check out the HNG platform <a href="https://internship.zuri.team/"> Click here</a></p>
+		</blockquote> -->
+	<!-- <div class="jumbotron">
+		<h3 class="display-3">Hey, awesome you!</h3>
+		<p class="lead">This is a simple hero unit, showing that anyone can be a real hero!.</p>
+		<hr class="my-2">
+		<p>Use utility classes for typography and spacing</p>
+		<p class="lead">
+			<a class="btn btn-primary btn-lg" href="#!" role="button">Ready for action</a>
+		</p>
+	</div>
+ -->
+
+	{% endblock content%}
+
+</body>
+</html>

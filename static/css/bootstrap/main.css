@@ -1,0 +1,13 @@
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+	color: #fff;
+	background-color: #000;
+}
+.navbar .navbar-expand-md .navbar-dark .navbar-nav .nav-item.show .dropdown-menu .dropdown-item{
+	color: #fff;
+	background-color: #000;
+}
+.dropdown-menu{
+	color: #fff;
+	background-color: #000;
+}
