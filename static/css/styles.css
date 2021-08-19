@@ -273,25 +273,6 @@ img,
 svg {
   vertical-align: middle;
 }
-.img1 img{
-  height: 300px;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  width: 100%;
-}
-.img2 img{
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-  width: 250px;
-  height: 250px;
-  border-radius:  50%;
-  border: 7px solid #fff;
-  margin-top: -80px;
-
-}
 
 table {
   caption-side: bottom;
@@ -4299,16 +4280,11 @@ textarea.form-control-lg {
   background-clip: border-box;
   font: serif;
   border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius:5px;
   transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: auto;
-  box-shadow:  0 0 30px rgba(0,0,0,0.5);
-  overflow: hidden;
-  border-radius: 30px;
-  width: 50%;
-  text-align: center;
-  z-index: 1;
 }
-
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -10881,9 +10857,6 @@ textarea.form-control-lg {
 html,
 body {
   height: 100%;
-}
-.profile-area{
-  padding: 80px 0;
 }
 
 #layoutAuthentication {
