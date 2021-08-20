@@ -1,10 +1,19 @@
-{% extends 'home.html' %}
+
 {% load static %}
-{% block content %}
 
-<img src="{% static 'a2.JPG' %}"
-width= "500px"
-height="600px">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your Response</title>
+	<link rel="stylesheet"  href="{% static 'css/bootstrap/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/new.css' %}"  />
+</head>
+<body>
+<img src="{% static 'a2.JPG' %}" width= "500px" height="600px">
 <img src="{% static 'y.JPG' %}" class="rounded-right">
+<br>
+<br>
+<a class="btn btn-primary btn-lg" href="{% url 'home'%}" role="button" class="lead">Back</a>
 
-{% endblock content %}
+</body>
+</html>

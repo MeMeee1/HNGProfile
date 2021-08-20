@@ -1,0 +1,35 @@
+img.profile-img{
+	max-width: 200px;
+	max-height: 200px;
+	/*border-radius: 30%;*/
+	/*position: relative;*/
+	/*display: block;*/
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	/*z-index: 1;*/
+	/*width: 200px;*/
+	/*height: 250px;*/
+	border-radius:  10%;
+	/*border: 7px solid #fff;*/
+	/*margin-top: -80px;*/
+}
+
+.profile-img:hover{
+	/*border-spacing: */
+	border-style: outset;
+	border-color: #01efac;
+	border-width: 2px 2px 2px 2px;
+
+}
+
+img.cover-photo{
+	max-height: 200px;
+	max-width: 100%;
+
+}
+
+
+.card{
+	align-self: center;
+	/*padding: 20px 20px 20px 20px;*/
+}

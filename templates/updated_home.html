@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HNG Resume</title>
+	<link rel="stylesheet"  href="{% static 'css/bootstrap/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/new.css' %}"  />
+</head>
+<body>
+	<br>
+<div class="container">
+	<div class="row">
+		<div class="col-7">
+		<center>
+		<div class="card">
+			<div class="card-header"><h1>Ysabel Katchy</h1><div class="img2"><img src="{% static 'c.JPG' %}" class="profile-img"></div></div>
+			
+				<div class="main-text">
+					<br>
+					<h2><b>Computer Programmer</b></h2>
+					<br>
+					<a href=""><img src="{% static 'vk.png' %}" width="30px" height="30px" class="socials" ></a>
+					<a href=""><img src="{% static 'fb.png' %}" width="30px" height="30px" class="socials" ></a>
+					<a href=""><img src="{% static 'message.png' %}" width="30px" height="30px" class="socials" ></a>
+					<a href=""><img src="{% static 'google.png' %}" width="30px" height="30px" class="socials" ></a>
+					<a href=""><img src="{% static 'info.png' %}" width="30px" height="30px" class="socials" ></a>
+					<br>
+					<br>
+					<br>
+				</div>
+				<br>
+			</div>
+		</center>			
+		</div>
+		<div class="col-4">
+			<center>
+			<div class="card">
+			<form method="POST">
+				<legend>Make a Comment</legend>
+				{% csrf_token %}
+				<br>{{ form.as_p }}
+				<input type="submit" class="btn btn-primary form-control" value="Submit" />
+			</form>
+		</div>
+			</center>
+		</div>
+	</div>
+	<br>
+	
+	<div class="row">
+		<div class="col-12">
+		<center>
+		<div class="card">
+			<div class="card-header"><p class="lead"><b>About Me</b></p></div>
+			<div class="card-body">
+				<p>I am an audacious goal-oriented Computer Programmer who exhibits strong work ethics, creative and analytical skills. I am always enthusiatic to build tech projects that change the world.
+				</p>
+			</div>
+		</div>
+		</center>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-6">
+		<center>
+		<div class="card">
+			<div class="card-header"><p class="lead"><b>Work Experience</b></p></div>
+			<div class="card-body">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<p class="lead"><b>March 2021 - August 2021</b></p>
+						<p><b>Zuri Training  </b><img src="{% static 'z.png' %}" width="80px" height="50px"></p>
+						<p class="lead">Trained as a Backend Developer at <a href="https://training.zuri.team/">Zuri Training</a></p></li>
+
+
+						<br>
+						<li class="list-group-item"><p class="lead"><b>2021-present</b></p>
+						<p><b>HNG Internship  </b><img src="{% static 'hng.JPG' %}" width="50px" height="30px"></a></p>
+						<p class="lead"> Backend Intern Developer at <a href="https://internship.zuri.team/">HNG</a></p></li>
+
+						<br>
+						<li class="list-group-item "><p class="lead"><b>2021-present</b></p>
+						<p><b>Github </b><img src="{% static 'git.jpg' %}"width="90px" height="50px"></p>
+						<p class="lead">Built softwares and web applications for a Non-Profit Organization at <a href="https://www.github.com/MeMeee1/"/>Github</a></p></li>
+				</ul>
+			</div>
+		</div>
+		</center>
+		</div>
+		<div class="col-6">
+		<center>
+		<div class="card">
+			<div class="card-header"><p class="lead"><b>Skills</b></p></div>
+			<div class="card-body">
+				<ul class="list-group">
+					<li class="list-group-item "><br><p class="lead"><b>Django</b><br><img src="{% static 'd.png' %}"width="60px" height="60px"></li></p>
+					<li class="list-group-item "><br><p class="lead"><b>Python</b><br><img src="{% static 'py.png' %}"width="100px" height="50px"></li></p>
+					<li class="list-group-item "><br><p class="lead"><b>HTML & CSS</b><br><img src="{% static 'j.jpg' %}"width="80px" height="60px"></li></p>
+				</ul>
+			</div>
+		</div>
+		</center>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-12">
+		<center>
+		<div class="card"><div class="text-muted">Copyright &copy; Ysabel Katchy 2021</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+
+		</div>
+		</center>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
